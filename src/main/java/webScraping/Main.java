@@ -10,11 +10,10 @@ public class Main {
 	public static void main(String[] args) throws IOException ,MalformedURLException, ZipException {
 		// Instancia da classe
 		ZipAnexos z = new ZipAnexos();
-		// Fazendo os downloads necess·rios
+		// Fazendo os downloads necess√°rios
 		z.downloadAnexos();
 		// Zipando os arquivos
 		ZipAnexos.ZipArquivos(Paths.get("src/main/resources/anexos/").toFile());
-		
-		z.readPDFtoCSV();
+
 	}
 }
